@@ -50,4 +50,9 @@ To run simulation on CRC clusters "acms.crc.nd.edu" which are based on SGE (Sun 
    (4) In the directory ~/SceCells write the command "make"
    (5)Submit your simulation with the command "qsub EpiScale.sh"  # Note: Other .sh files in ~/script are not active anymore#
 
-
+************************************
+To build code on UCR HPCC clusters "cluster.hpcc.ucr.edu":
+   (1) git clone https://github.com/AliNemat/EpiScale_Signal.git
+   (2) login to an available gpu: srun -p gpu -c 4 --gres=gpu:1 --pty bash -l
+   (3) cd into Episcale_Signal
+   (4) run the proper .sh file
